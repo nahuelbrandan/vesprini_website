@@ -231,31 +231,26 @@ background-position: center; background-size: cover;">
     <hr class="star-dark mb-5">
     <div class="row">
       <div class="col-lg-8 mx-auto">
-        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+        <form id="contactForm" name="contactForm" action="https://formspree.io/f/xvovvedw" method="POST">
           <div class="control-group">
             <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Name</label>
-              <input class="form-control" type="text" id="name" required="" placeholder="Nombre">
+              <input class="form-control" type="text" id="name" required="" placeholder="Nombre" name="Nombre">
               <small class="form-text text-danger help-block"></small>
             </div>
           </div>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Email Address</label>
-              <input class="form-control" type="email" id="email" required="" placeholder="Email">
-              <small class="form-text text-danger help-block"></small>
-            </div>
-          </div>
-          <div class="control-group">
-            <div class="form-group floating-label-form-group controls mb-0 pb-2"><label>Phone Number</label>
-              <input class="form-control" type="tel" id="phone" required="" placeholder="Teléfono">
+              <input class="form-control" type="email" id="email" required="" placeholder="Email" name="Email">
               <small class="form-text text-danger help-block"></small>
             </div>
           </div>
           <div class="control-group">
             <div class="form-group floating-label-form-group controls mb-5 pb-2">
-              <textarea class="form-control" id="message" required="" placeholder="Mensaje" rows="5"></textarea>
+              <textarea class="form-control" id="message" required="" placeholder="Mensaje" name="Mensaje" rows="5"></textarea>
               <small class="form-text text-danger help-block"></small>
             </div>
           </div>
+          <div class="g-recaptcha" data-sitekey="6LcqbB8aAAAAAIKY19qhbSDuKk8NMsg8S9b9Dhrl"></div>
           <div id="success"></div>
           <div class="form-group">
             <button class="btn btn-primary btn-xl" id="sendMessageButton" type="submit">Enviar</button>
