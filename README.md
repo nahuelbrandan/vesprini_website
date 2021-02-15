@@ -1,3 +1,3 @@
-# Agustin Vesprini personal website
+# Personal website
 
-Sitio web personal de Agustin Vesprini, se puede visualizar en https://www.agustinvesprini.com
+Personal website of Agustin Vesprini, you can see in https://www.agustinvesprini.com
